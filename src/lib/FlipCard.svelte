@@ -33,12 +33,12 @@
 				class:c-selected ={on}
 				
 			>
-			<img	{src}	class = "isize c-front c-notselect" 
+			<img	{src}	class = "c-front c-notselect" 
 							alt   = "unselected"
 							on:pointerdown={zoomer}>
 
 			<img	class:zoom		class:c-selected = {!on} 
-					src = {off}		class ="c-back isize" 
+					src = {off}		class ="c-back" 
 					{alt}			transition:scale    >
 		</div>
 	</div>
