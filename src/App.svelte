@@ -7,8 +7,6 @@
 	//import {imgs, unselected} from './images,js';
 	import   {images}   from   './lib/imgData.js';  
 	import   FlipCard   from   './lib/FlipCard.svelte';
-
-	//import  "App.css";
 	
 	let selectedPos=[];
 	let selectedId =[];  
@@ -29,46 +27,46 @@
 								src: images[i].src  }  );
 
 	let	 randomImages = images.sort( ()=> Math.random() - 0.5);
-	//log(randomImages);
-	
+	//log(randomImages);	
 	let imgLength    = (randomImages.length);
 
 
-  function selections(event) {
-
-		if (count<2) {
-			selectedId  = [...selectedId,  event.detail.id];
-			selectedPos = [...selectedPos, event.detail.pos];
-			randomImages[event.detail.pos].on = true;
-			count++;
-		}
-		if (count===2)  { setTimeout(match,600) }
+function  selections(event) {
+	if (count<2) {
+		selectedId  = [...selectedId,  event.detail.id];
+		selectedPos = [...selectedPos, event.detail.pos];
+		randomImages[event.detail.pos].on = true;
+		count++;
 	}
+	if (count===2)  { setTimeout(match,600) }
+}
 
 
-  function	match() {
-
-		if (selectedId[0]!==selectedId[1]) {
-			randomImages[selectedPos[0]].on=false;
-			randomImages[selectedPos[1]].on=false;
-			selectedId = [];
-			selectedPos =[];
-			count=0;
-		}  
-		else {  
-			selectedId = [];
-			selectedPos =[];
-			count=0;
-			remained = parseInt( (randomImages.filter(
-								  image=> !image.on).length/2
-						).toFixed(0) );
-		}
+function  match() {
+	
+	if (selectedId[0]!==selectedId[1]) {
+		randomImages[selectedPos[0]].on=false;
+		randomImages[selectedPos[1]].on=false;
+		selectedId = [];
+		selectedPos =[];
+		count=0;
+	}  
+	else {  
+		selectedId = [];
+		selectedPos =[];
+		count=0;
+		remained = parseInt( (randomImages.filter(
+							  image=> !image.on).length/2
+					).toFixed(0) );
 	}
+}
 </script>
 
 
 
-<header>
+<header>	<h2>	M e m o r y      <br> &nbsp <br> &nbsp
+			G a m e
+	</h2>
 	<a    href="https://github.com/Peyman-Borhani/memory-game#readme" 
           target="_blank" rel="noreferrer" > Github
     </a>
@@ -82,14 +80,6 @@
 
 
 <main>
-
-	
-
-	<h2>	M e m o r y      <br> &nbsp &nbsp
-			G a m e
-
-	</h2>
-
 	<div id='board'>
 		{#each randomImages as image, index}
 			<FlipCard   {...image}      pos = {index}
