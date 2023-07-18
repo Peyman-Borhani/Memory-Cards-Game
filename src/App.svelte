@@ -67,7 +67,11 @@
 </script>
 
 
+
 <header>
+	<a    href="https://github.com/Peyman-Borhani/memory-game#readme" 
+          target="_blank" rel="noreferrer" > Github
+    </a>
     <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
       <img src={vLogo} class="logo" alt="Vite Logo" />
     </a>
@@ -78,10 +82,8 @@
 
 
 <main>
-	<p> <a    href="https://github.com/Peyman-Borhani/memory-game#readme" 
-              target="_blank" rel="noreferrer"> Github
-        </a>  open-source code repo.
-	</p>
+
+	
 
 	<h2>	M e m o r y      <br> &nbsp &nbsp
 			G a m e
