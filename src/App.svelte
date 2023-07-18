@@ -2,11 +2,9 @@
 	// By  Peyman Borhani
 	// Not the complete game, Up to here is free :)
 	
-	import 	sLogo 	from './assets/svelte.svg';
-	import 	vLogo 	from '/vite.svg';
-	//import {imgs, unselected} from './images,js';
-	import   {images}   from   './lib/imgData.js';  
+	import   {images}   from   './lib/imgData.js';  //import {imgs, unselected} from './images,js';
 	import   FlipCard   from   './lib/FlipCard.svelte';
+	import   Header		from   './lib/Header.svelte';
 	
 	let selectedPos=[];
 	let selectedId =[];  
@@ -62,21 +60,6 @@ function  match() {
 }
 </script>
 
-
-
-<header>	<h2>  M e m o r y  <br> &nbsp <br> &nbsp
-			G a m e
-	</h2>
-	<a    href="https://github.com/Peyman-Borhani/memory-game#readme" 
-          target="_blank" rel="noreferrer" > Github
-    </a>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={vLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={sLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-</header>
 
 
 <main>

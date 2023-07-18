@@ -39,25 +39,13 @@ body {  display: flex;       position    : fixed;
         width  : 100vw;      font-size   : calc(3vw + 3vh); 
                              color       : #888;
 }
-header {                     position: absolute;
-        height  : 6vmin;     will-change: filter;
-        width   : 6vmin;     max-width  : 3ch; 
-        right   : 14vmin;    transition : filter 300ms; 
-        top     : 1vmin;     z-index: 1000
-                             
-} 
-.svelte, .github   {max-width:0}  
-.logo {padding: 2vmin; }
-.logo:hover { filter: drop-shadow(0 0 4vmin #646cffaa) }
-.logo.svelte:hover  { filter: drop-shadow(0 0 4vmin #ff3e00aa) }
-.logo:hover .svelte { max-width: 3ch;    }
 
 main { 
-        display: flex;      flex-direction: column;
-        height : 100%;      overflow: hidden;
-        width  : 100%;      place-items: center;
-                            background-color: black;
-                            place-content: center;
+        display : flex;         background-color: black;
+        height  : 100%;         flex-direction  : column;
+        width   : 100%;         place-items     : center;
+        overflow: hidden;       place-content   : center;                 
+                            
 }
 
 h2:is(#ST)  { visibility: hidden }
@@ -91,8 +79,6 @@ h3     {
 
 @media screen and (orientation: portrait)
 {
-    br     { display: none }
-
     #board { left: 0;
         grid-template: repeat(4, 1fr) / repeat(4, 20%);
         height: 86vh;      aspect-ratio: 1/2.2; 
