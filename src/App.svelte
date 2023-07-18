@@ -64,7 +64,7 @@ function  match() {
 
 
 
-<header>	<h2>	M e m o r y      <br> &nbsp <br> &nbsp
+<header>	<h2>  M e m o r y  <br> &nbsp <br> &nbsp
 			G a m e
 	</h2>
 	<a    href="https://github.com/Peyman-Borhani/memory-game#readme" 
