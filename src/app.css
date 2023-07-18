@@ -1,5 +1,5 @@
 :root {
-        line-height : 1.5;
+        line-height : 1.4;
         font-weight : 400;
         color-scheme: dark;
         font-synthesis: none;
@@ -50,7 +50,7 @@ header {                     position: absolute;
 .logo {padding: 2vmin; }
 .logo:hover { filter: drop-shadow(0 0 4vmin #646cffaa) }
 .logo.svelte:hover  { filter: drop-shadow(0 0 4vmin #ff3e00aa) }
-header:hover .svelte { max-width: 3ch;    }
+.logo:hover .svelte { max-width: 3ch;    }
 
 main { 
         display: flex;      flex-direction: column;
@@ -64,7 +64,7 @@ h2:is(#ST)  { visibility: hidden }
 h2  { 
         display: flex;      text-align: center;             
         right  : 1ch;       position: fixed;
-        top    : 1ch;       line-height: 1.5ch;
+        top    : 1ch;       line-height: 1.3ch;
         margin : 0;         max-width: 1.4ch;
         padding: 0;         color: #62a;
                             text-shadow: 0 0 4pt #62a
