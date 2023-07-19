@@ -31,9 +31,8 @@ header {                     position: absolute;
 .svelte, .github   {max-width:0}
 
 .logo {padding: 2vmin; }
-.logo:hover { filter: drop-shadow(0 0 4vmin #646cffaa) }
+.logo:hover { max-width: 3ch; filter: drop-shadow(0 0 4vmin #646cffaa) }
 .logo.svelte:hover  { filter: drop-shadow(0 0 4vmin #ff3e00aa) }
-.logo:hover .svelte { max-width: 3ch;    }
 
 @media screen and (orientation: portrait) {  h2>br {display: none}  }
 </style>
